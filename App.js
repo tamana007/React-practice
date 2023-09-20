@@ -3,7 +3,7 @@ import './App.css';
 import Home from './components/Home';
 
 function Greeting() {
-  return <h2>my first react app</h2>
+  // return <h2>my first react app</h2>
 
   // const [name, setName] = useState("Tamana")
 

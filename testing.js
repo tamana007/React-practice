@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import './testing.css'
 
 let books=[
@@ -44,36 +44,49 @@ let books=[
 
 
 
-// let names=['ahmad','ali','samad']
-// const newName=names.map((e)=>{
-//   return <h1> {e}</h1>
-// })
-// console.log(newName)
+
 
 function Testing() {
   return (
+    
+     
     <section className='bookList'>
+     
+       
      {
+      
       books.map((b)=>{
-        const {title, author, src, id }=b;
-        return <BookLis title={title} author={author} src={src} key={id}/>
+        // const {title, author, src, id }=b;
+        // return <BookLis title={title} author={author} src={src} key={id}/>
+        return <BookLis {...b}key={b.id}/>
+        // return <BookLis>{...b}</BookLis>
       })
      
      }
      
-  
+     {/* <button>click me</button> */}
     </section>
+    
+    
   )
   
 }
 
 const BookLis=(props)=>{
+  const btnFunc=(b)=>{
+    console.log(title);
+    
+
+  }
   const {title,author,src}=props;
   return <article className='Book'>
     <h2>{title}</h2>
     <h4>{author}</h4>
     <img src={src} alt='h'></img>
+    <button type='btn' onClick={btnFunc}>click me</button>
+    
   {/* {children} */}
+  
     </article>
 }
 

@@ -10,6 +10,7 @@ body{
   
 }
 .bookList{
+  position: relative;
   width: 90%vw;
   max-width: 1170px;
   margin: 5rem auto;
@@ -42,6 +43,28 @@ body{
 .Book h4{
   margin-top: 1rem;
   font-size: 1rem;
+}
+.Number{
+  position: absolute;
+  color: rebeccapurple;
+  /* top: 0; */
+  /* left: 0; */
+  /* padding: opx; */
+  padding-left: 0px;
+  background-color: #c35600;
+  color: #fff;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  /* margin-left: 1rem; */
+  font-size: 30px;
+  /* text-align: left; */
+}
+.heading{
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: uppercase;
+
 }
 /* .Book h4{
   color: '#617d98', fontSize:'0.95rem',marginTop: '0.5rem'
